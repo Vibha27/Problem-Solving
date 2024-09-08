@@ -23,9 +23,9 @@ function getMoneySpent(keyboards, drives, b) {
         
         if (sum <= b) {
             maxAmt = Math.max(sum,maxAmt);
-            i++;
+            i++; // keyboard pointer is incremented to try a expensive keyboard from the sorted list.
         } else {
-            j++;
+            j++; // drive pointer is incremented to try a cheaper drive from the sorted list.
         }
         
     }
