@@ -25,6 +25,17 @@ function fiboSeries(num) {
     return fiboSeries(num-1) + fiboSeries(num-2) // 3 + 4
 }
 
-console.log(fiboSeries(8))
+console.log(fiboSeries(8));
+
+// Dassault System Fibonacci series question
+function fibonacciSeries (n=10) {
+    let fibo = [0,1];
+    for (let i = 2; i<n; i++) {
+        fibo.push(fibo[i-1]+fibo[i-2])
+    }
+    return fibo
+}
+
+console.log(fibonacciSeries(10))
 
 
