@@ -13,3 +13,8 @@ for (let i=0; i<5; i++) {
 	console.log(row)
 }
 
+const str = '5 4 3 2 1';
+
+for (let i=0; i<5; i++) {
+	console.log(str.substring(0, (5-i)*2-1))	
+}
