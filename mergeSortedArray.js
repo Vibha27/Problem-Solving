@@ -39,5 +39,25 @@ function mergeSortedArray2 (arr1, arr2) {
 const arr2 = [1,4,5]
 const arr1 = [2,3,6,7,8,9]
 
-console.log(mergeSortedArray1(arr1, arr2))
-console.log(mergeSortedArray2(arr1, arr2))
+// console.log(mergeSortedArray1(arr1, arr2))
+// console.log(mergeSortedArray2(arr1, arr2))
+
+
+function mergeTwoSortedArr (arr1, arr2) {
+    let i = 0, j=0;
+    let arr1Len = arr1.length;
+    let arr2Len = arr2.length;
+    let sortedArr = [];
+
+    while (i < arr1Len && j < arr2Len) {
+        if (arr1[i] < arr2[j]) {
+            sortedArr.push(arr1[i++]);
+        } else {
+            sortedArr.push(arr2[j++])
+        }
+    }
+
+    return sortedArr.concat(arr1.slice(i), arr2.slice(j))
+}
+
+console.log(mergeTwoSortedArr(arr1, arr2))
