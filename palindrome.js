@@ -9,3 +9,10 @@ function isPalindrome (string) {
 
 const str = "malayalam"
 console.log(isPalindrome(str))
+
+function isPalindrome1 (string) {
+    return string.split("").reverse().join("") === string
+}
+
+const str1 = "malayalam"
+console.log(isPalindrome(str1))
