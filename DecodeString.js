@@ -3,7 +3,7 @@
 // First half chars will be placed at odd index and remaining at even index
 // Return decoded new string 
 
-function decodeString (str) {
+function decodeString (str) { 
     let strArr = str.split("");
     let mid = Math.ceil(strArr.length/2)
     let firstHalf = strArr.slice(0,mid);
